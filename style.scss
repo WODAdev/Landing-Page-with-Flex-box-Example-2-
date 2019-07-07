@@ -1,0 +1,365 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section {
+    // margin-bottom: 4rem;
+    // margin-top: 4rem;
+    margin: 4rem 0;
+}
+
+h2 {
+    font-size: 3rem;
+    color: rgb(212, 243, 205);
+    text-shadow: 1px .5px 2px 1.5px rgb(231, 143, 143);
+    text-align: center; 
+    font-family: 'Dancing Script', cursive;
+}
+
+h5 {
+    font-family: 'Dancing Script', cursive;
+    color: rgb(159, 223, 144);
+    text-shadow: 1px .5px 2px 1.5px rgb(148, 102, 102);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+p {
+    color: #476b6b;
+    text-align: center;
+    line-height: 22px;
+    font-family: sans-serif;
+}
+
+input, label {
+    color: #476b6b;
+}
+
+// header
+
+header {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+
+    ul {
+        list-style: none;
+    }
+
+    ul li {
+        margin: .2rem .5rem;
+        text-align: left;
+    }
+
+    ul li a {
+        color: rgb(166, 207, 156);
+        text-shadow: 1px .5px 2px 1.5px rgb(92, 102, 80);
+        justify-content: space-around;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.8rem;
+        letter-spacing: 1.5px;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    ul li a:hover {
+        color: rgb(253, 229, 229);
+        text-shadow: 1px .5px 2px 1.5px rgb(182, 141, 141);
+    }
+}
+
+.logo {
+    margin-left: 3%;
+
+    img {
+        width: 3.6rem;
+        height: 4rem;
+        margin-top: 1rem;
+    }
+}
+
+// top 
+
+.bgimage {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/aaaa.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    height:70vh;
+    background-color: rgb(93, 107, 107);
+    z-index: -1;
+}
+
+.text-on-image {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3rem;
+    color: #fff;
+    text-shadow: 1px .5px 2px 1.5px rgb( 173, 131, 131);
+
+    p {
+        color: #fff;
+        font-family: 'Dancing Script', cursive;
+        letter-spacing: 3px;
+        font-size: 1.5rem;
+    }
+}
+
+// middle
+
+.about {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 2%;
+
+    p {
+        text-align: left;
+        width: 70%;
+        margin-top: 1.3rem;
+    }
+
+    img {
+        height: 20rem;
+        width: 30rem;
+    }
+
+    strong {
+        color: rgb(185, 185, 185);
+        font-family: 'Dancing Script', cursive;
+        letter-spacing: 3px;
+        font-size: 25px;        
+    }
+}
+
+// recipes
+
+.insiderecipes {
+    text-align: center;
+    background-color: rgb(251, 251, 251);
+    box-sizing: border-box;
+    padding-bottom: 3rem;
+
+    p {
+        margin: 0 6%;
+        text-align: left;
+    }
+}
+
+.recipes img {
+    margin-top: 3rem;
+    height: 40%;
+    width: 45%;
+    min-height: 12rem;
+    min-width: 13rem;;
+}
+
+.button-seemore {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.btn, input[type=submit] {
+    color: rgb(107, 105, 102);
+    background-color: rgb(223, 233, 220);
+    text-shadow: .5px .1px 1px .5px rgb(243, 125, 125);
+    box-shadow: 1px 2px .5px 1px rgb(250, 126, 126);
+    border-radius: 10%;
+    text-decoration: none;
+    text-align: center; 
+    padding: 5px;
+    cursor: pointer;
+    border:none;
+    justify-content: center;
+}
+
+.btn:hover, input[type=submit]:hover {
+    box-shadow: 1px 2px .5px 1px rgb(172, 54, 54);
+    color:rgb(219, 135, 135); 
+}
+
+.re {
+    margin-bottom: 2rem;
+
+    a {
+        color: rgb(85, 110, 85);
+        font-weight: bold;
+    }
+}
+
+// form 
+
+form {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 3px;
+    margin-bottom: 10px;
+  }
+
+  input[type=submit] {
+      padding: 5px;
+      font-size: 17px;
+  }
+
+  #subject {
+      font-family: sans-serif;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+
+// media queries 
+
+@media only screen and (min-width: 577px) {
+    header {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+    .menu {
+        display: flex;
+
+        ul li {
+            display: inline-block;
+        }
+
+        ul li a {
+            justify-content: space-between;
+            margin-right: 1rem;
+        }
+    }
+
+    .insiderecipes {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .re {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .button-seemore {
+        margin-top: 5rem;
+        text-align: left;
+        margin-left: 5%;
+    }
+
+    form {
+        width: 40%;
+        min-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .about {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        margin: 0 2%;
+    }
+
+    p {
+        text-align: left;
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//     nav {
+//         display: flex;
+//         justify-content: space-around;
+//     }
+
+//     ul {
+//         display: flex;
+//     }
+
+//     ul li {
+//       margin-right: 1.3rem; 
+//       padding-top: 10px; 
+//     }
+   
+    
+//      ul li a::before {
+//         content: "";
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 20px;
+//         height: 20px;
+//         border-top: 1px dotted red;
+//         border-left: 1px dotted red;
+//         transition: width 0.5s, height 0.5s;
+//         box-sizing: border-box;
+//         border-radius: 50%;
+//     }
+
+//     ul li a:hover::before {
+//         width: 100%;
+//         height:100%;
+//     }
+
+//     ul li a::after {
+//         content: "";
+//         position: absolute;
+//         bottom: 0;
+//         right: 0;
+//         width: 20px;
+//         height: 20px;
+//         border-radius: 50%;
+//         border-bottom: 1px dotted red;
+//         border-right: 1px dotted red;
+//         transition: width 0.5s, height 0.5s;
+//         box-sizing: border-box;
+//         background-origin: border-box;
+//     }
+
+//     ul li a:hover::after {
+//         width: 100%;
+//         height:100%;
+//     }
+// }
