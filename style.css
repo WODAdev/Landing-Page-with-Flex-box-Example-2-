@@ -1,0 +1,324 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+section {
+  margin: 4rem 0;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #d4f3cd;
+  text-shadow: 1px 0.5px 2px 1.5px #e78f8f;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+}
+
+h5 {
+  font-family: 'Dancing Script', cursive;
+  color: #9fdf90;
+  text-shadow: 1px 0.5px 2px 1.5px #946666;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+p {
+  color: #476b6b;
+  text-align: center;
+  line-height: 22px;
+  font-family: sans-serif;
+}
+
+input, label {
+  color: #476b6b;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -10px;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  margin: .2rem .5rem;
+  text-align: left;
+}
+
+.menu ul li a {
+  color: #a6cf9c;
+  text-shadow: 1px 0.5px 2px 1.5px #5c6650;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.8rem;
+  letter-spacing: 1.5px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.menu ul li a:hover {
+  color: #fde5e5;
+  text-shadow: 1px 0.5px 2px 1.5px #b68d8d;
+}
+
+.logo {
+  margin-left: 3%;
+}
+
+.logo img {
+  width: 3.6rem;
+  height: 4rem;
+  margin-top: 1rem;
+}
+
+.bgimage {
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("images/aaaa.jpg");
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/aaaa.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+  height: 70vh;
+  background-color: #5d6b6b;
+  z-index: -1;
+}
+
+.text-on-image {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 1.3rem;
+  color: #fff;
+  text-shadow: 1px 0.5px 2px 1.5px #ad8383;
+}
+
+.text-on-image p {
+  color: #fff;
+  font-family: 'Dancing Script', cursive;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 2%;
+}
+
+.about p {
+  text-align: left;
+  width: 70%;
+  margin-top: 1.3rem;
+}
+
+.about img {
+  height: 20rem;
+  width: 30rem;
+}
+
+.about strong {
+  color: #b9b9b9;
+  font-family: 'Dancing Script', cursive;
+  letter-spacing: 3px;
+  font-size: 25px;
+}
+
+.insiderecipes {
+  text-align: center;
+  background-color: #fbfbfb;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-bottom: 3rem;
+}
+
+.insiderecipes p {
+  margin: 0 6%;
+  text-align: left;
+}
+
+.recipes img {
+  margin-top: 3rem;
+  height: 40%;
+  width: 45%;
+  min-height: 12rem;
+  min-width: 13rem;
+}
+
+.button-seemore {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.btn, input[type=submit] {
+  color: #6b6966;
+  background-color: #dfe9dc;
+  text-shadow: 0.5px 0.1px 1px 0.5px #f37d7d;
+  -webkit-box-shadow: 1px 2px 0.5px 1px #fa7e7e;
+          box-shadow: 1px 2px 0.5px 1px #fa7e7e;
+  border-radius: 10%;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn:hover, input[type=submit]:hover {
+  -webkit-box-shadow: 1px 2px 0.5px 1px #ac3636;
+          box-shadow: 1px 2px 0.5px 1px #ac3636;
+  color: #db8787;
+}
+
+.re {
+  margin-bottom: 2rem;
+}
+
+.re a {
+  color: #556e55;
+  font-weight: bold;
+}
+
+form {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+
+input[type=submit] {
+  padding: 5px;
+  font-size: 17px;
+}
+
+#subject {
+  font-family: sans-serif;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 577px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menu ul li {
+    display: inline-block;
+  }
+  .menu ul li a {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 1rem;
+  }
+  .insiderecipes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .insiderecipes p {
+    margin-left: 10%;
+    width: 80%;
+  }
+  .re {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    max-width: 50%;
+  }
+  .button-seemore {
+    margin-top: 5rem;
+    text-align: left;
+    margin-left: 5%;
+  }
+  form {
+    width: 40%;
+    min-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 0 2%;
+  }
+  p {
+    margin-left: 10%;
+    text-align: left;
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
